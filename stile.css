@@ -1,6 +1,6 @@
 * { 
     box-sizing: border-box;
-    border-box; margin: 0; 
+    margin: 0; 
     padding: 0; 
     font-family: Arial, sans-serif; }
 
@@ -8,7 +8,7 @@ body {
     text-align: center; 
     background-color: #000; 
     color: white; }
-
+/* 
 nav { 
     background: #fff; 
     padding: 15px; 
@@ -16,10 +16,70 @@ nav {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    padding: 15px 30px; }
+    padding: 15px 30px; } */
+
+    /* inizio navbar */
+    .navbar {
+        background-color: white;
+        overflow: hidden;
+
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        .navbar .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        }
+        .navbar .menu li {
+        display: inline-block;
+        }
+        .navbar .menu li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        }
+
+        .navbar .menu li a:hover {
+        text-decoration: underline;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 30px;
+            color: black;
+            padding: 14px 20px;
+            cursor: pointer;
+            }
+
+            #menu-toggle {
+            display: none;
+            }
+
+            @media screen and (max-width: 600px) {
+                .navbar .menu {
+                display: none;
+                width: 100%;
+                }
+                .navbar .menu li {
+                display: block;
+                text-align: left;
+                }
+                #menu-toggle:checked + .hamburger + .menu {
+                display: block;
+                }
+                .hamburger {
+                display: block;
+                }
+                }
+    /*fine navbar */
+
 
 .logo { 
     font-size: 24px; 
+    padding: 0 20px;
     font-weight: bold; 
     color: #000; 
     text-transform: uppercase; }
@@ -45,8 +105,8 @@ nav {
     display: flex; 
     gap: 15px; }
 
-.nav-icons i { f
-    ont-size: 20px; 
+.nav-icons i { 
+    font-size: 20px; 
     color: #333; cursor: pointer; 
     transition: color 0.3s ease; }
 
@@ -87,8 +147,8 @@ header {
     font-weight: bold; }
 
 .cards { 
-    display: flex; j
-    ustify-content: center; 
+    display: flex; 
+    justify-content: center; 
     gap: 20px; 
     padding: 20px; }
 
