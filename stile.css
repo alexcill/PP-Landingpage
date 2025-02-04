@@ -147,10 +147,11 @@ p {
 .container {
     max-width: 1300px;
     margin: 0 auto;
-
-    padding: 150px 0px 0px  0px;
 }
 
+h2{
+    padding: 150px 0px 0px  0px;
+}
 
 .flex{
     display: flex;
@@ -275,11 +276,8 @@ p {
     .benefit {
         padding: 20px;
         border-bottom: 2px white solid;
-
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    /* Titolo e Testo */
     .benefit h4 {
         font-size: 18px;
         color: white;
@@ -294,25 +292,64 @@ p {
     /* Icone */
 
     .icons{
-        width: 32px;
-        height: 32px;
+        width: 40px;
+        height: 40px;
     }
 
     .uno {
-        background-image: url();
+        background-image: url(free-delivery.svg);
+        background-repeat: no-repeat;
     }
 
     .due {
-        background-image: url();
+        background-image: url(return-box.svg);
+        background-repeat: no-repeat;
     }
 
     .tre {
-        background-image: url();
+        background-image: url(fidelity_club.svg);
+        background-repeat: no-repeat;
     }
 
     .quattro {
-        background-image: url();
+        background-image: url(credit-card_.svg);
+        background-repeat: no-repeat;
     }
+
+    .flex-benefit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        gap: 20px;
+    }
+
+
+/*  SEZIONE NEWSLETTER */ 
+
+.newsletter{
+    display: flex;
+    align-items: center;
+
+    margin: 100px 0;
+}
+
+.img-news {
+    width: 50%;
+}
+
+.form{
+padding: 50px;
+}
+
+.input {
+    display: block;
+    width: 300px;
+    border-radius: 20px;
+
+    padding: 20px;
+}
 
 /* INIZIO FOOTER */
 
@@ -320,7 +357,6 @@ footer {
     padding: 20px; 
     background: black; 
     color: white;}
-
 
 
 /* inizio media query */
@@ -366,6 +402,31 @@ footer {
     .flex { 
     flex-direction: column;
      align-items: center;}
+
+     .flex-benefit {
+    flex-direction: column;
+
+    text-align: center;
     }
 
-/* fine media query*/
+    .icons{
+        width: 52px;
+        height: 52px;
+    }
+
+    .newsletter{
+        flex-direction: column;
+    }
+
+    .img-news {
+        width: 100%;
+    }
+
+    .form{
+        padding: 0px;
+        }
+
+    h3{
+        padding-top: 100px;
+    }
+    }
