@@ -4,6 +4,9 @@
     padding: 0; 
     font-family: Arial, sans-serif; }
 
+p { 
+   font-size: 1em;
+   line-height: 28px;}
 
 /* inizio navbar */
 .navbar {
@@ -61,7 +64,6 @@
     position: relative;
 
     background: url('hero.png') center/cover no-repeat;
-    box-shadow: #000;
 
     display: flex;
     align-items: center;
@@ -138,32 +140,25 @@
 
  /* inizio header */
 
+ .header { 
+    width: 100%;
+}
+
 .container {
     max-width: 1300px;
     margin: 0 auto;
 
-    padding: 40px 20px 0px;
+    padding: 150px 0px 0px  0px;
 }
 
-.header { 
-    width: 100%;
-    height: 100vh;
-}
 
 .flex{
     display: flex;
+
+    justify-content: center;
 }
 
-.bottone { 
-    display: inline-block;
-    padding: 10px 20px; 
-    background: white; 
-    border: #000 1px solid;
-    color: black; 
-    text-decoration: none; 
-    border-radius: 5px; 
-    margin-top: 10px; 
-    font-weight: bold;}
+ /* INIZIO CARD SEZIONI DA VISITARE */
 
     .cards {
         position: relative;
@@ -182,7 +177,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.2);
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -190,34 +185,146 @@
         color: white;
         font-size: 24px;
         cursor: pointer;
+
+        transition: opacity 0.3s;
+        opacity: 0;
     }
     .cards .overlay:hover {
         background: rgba(0, 0, 0, 0.7);
 
+        opacity: 1;
     }
 
     .titolo-cards {
-        font-weight: 800;
-        font-size: 36px;
+        font-weight: 600;
         margin-left: 20px;
-    }
 
-    p {
-        font-family: 24px;
-        line-height: 24px ;
+        text-transform: uppercase;
     }
 
     .cards .overlay p {
         margin-left: 20px;
     }
 
+    .img-section{
+        width: 100%;
+    }
+
+   /* INIZIO CARD PRODOTTI */
+  
+    .product-card {
+        width: 300px;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .product-card img {
+        width: 100%;
+    }
+    
+    .product-info {
+        padding: 15px;
+    }
+    
+    .product-info h4 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    
+    .product-info p {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 10px;
+    }
+    
+    .price {
+        font-size: 16px;
+        font-weight: bold;
+        color:  rgb(251, 59, 193);
+        
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .add-to-cart {
+      display: inline-block;
+        padding: 10px 20px; 
+        background: white; 
+        border: #000 1px solid;
+        color: black; 
+        text-decoration: none; 
+        border-radius: 5px;
+        margin-top: 10px; 
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+    }
+    
+    .add-to-cart:hover {
+        background-color: black;
+        color: #fff;
+
+        border: white;
+        transform: scale(1.05);
+    }
+    
+    /* INIZIO SEZIONE BENEFICI */
+
+    .benefit {
+        padding: 20px;
+        border-bottom: 2px white solid;
+
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Titolo e Testo */
+    .benefit h4 {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 8px;
+    }
+    
+    .benefit p {
+        font-size: 14px;
+        color: white;
+    }
+
+    /* Icone */
+
+    .icons{
+        width: 32px;
+        height: 32px;
+    }
+
+    .uno {
+        background-image: url();
+    }
+
+    .due {
+        background-image: url();
+    }
+
+    .tre {
+        background-image: url();
+    }
+
+    .quattro {
+        background-image: url();
+    }
+
+/* INIZIO FOOTER */
 
 footer { 
     padding: 20px; 
     background: black; 
     color: white;}
 
+
+
 /* inizio media query */
+
     @media screen and (max-width: 600px) {
     /* inizio nav */
         .navbar .menu {
@@ -257,7 +364,8 @@ footer {
     }
 
     .flex { 
-        flex-direction: column;}
+    flex-direction: column;
+     align-items: center;}
     }
 
 /* fine media query*/
