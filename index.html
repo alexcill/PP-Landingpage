@@ -1,79 +1,81 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calzedonia Black Friday</title>
     <link rel="stylesheet" href="stile.css">
     <!-- link per boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-
-        <nav class="navbar">
-
-        <div class="logo"> Calzedonia </div>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div> <img src="calzedonia_logo.png" alt="" class="logo"></div>
 
         <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 50 50">
-            <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+        <label for="menu-toggle" class="hamburger"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+                height="24" viewBox="0 0 50 50">
+                <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z">
+                </path>
             </svg> </label>
 
         <ul class="menu">
-        <li><a href="#offerte">Offerte speciali</a></li>
-        <li><a href="#benefit">Benefit</a></li>
-        <li><a href="#newsletter">Newsletter</a></li>
-        <li><a href="#cart"> icons </a></li>
+            <li><a href="#offerte">Offerte speciali</a></li>
+            <li><a href="#benefit">Benefit</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
         </ul>
 
-</nav>
+    </nav>
 
-<!-- HERO -->
+    <!-- HERO -->
 
-<section class="hero">
-<a href="#" class="hero-title"> Saldi Black Friday</a>
+    <section id="hero">
+        <a href="#" class="hero-title"> Saldi Black Friday</a>
 
-<!-- infinity scroll -->
-     <div id="container">
-        <div class="stage_animation">
-            <p>
-           Black friday: offerte esclusive su articoli selezionati: scopri i nostri sconti! Fino al 50%!
-            </p>
+        <!-- infinity scroll -->
+        <div id="container">
+            <div class="stage_animation">
+                <p>
+                    Black friday: offerte esclusive su articoli selezionati: scopri i nostri sconti! Fino al 50%!
+                </p>
 
-            <p>
-             Black friday: offerte esclusive su articoli selezionati: scopri i nostri sconti! Fino al 50%!
-            </p>
+                <p>
+                    Black friday: offerte esclusive su articoli selezionati: scopri i nostri sconti! Fino al 50%!
+                </p>
 
-            <p>
-            Black friday: offerte esclusive su articoli selezionati: scopri i nostri sconti! Fino al 50%!
-            </p>
+                <p>
+                    Black friday: offerte esclusive su articoli selezionati: scopri i nostri sconti! Fino al 50%!
+                </p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- TRE MIGLIORI SEZIONI DA VISITARE -->
-    
-        <section class="container">
-            <h2>Calzedonia Black Friday 2025</h2>
-            <p>Esplora le nostre categorie preferite: scopri le offerte esclusive su calze, costumi da bagno e leggings! </p>
-        </section>
-  
-    <section class="header flex"> 
+    <!-- TRE MIGLIORI SEZIONI DA VISITARE -->
 
-          <div class="cards">
+    <section class="container">
+        <h2>Calzedonia Black Friday 2025</h2>
+        <p>Esplora le nostre categorie preferite: scopri le offerte esclusive su calze, costumi da bagno e leggings!
+        </p>
+    </section>
+
+    <section class="header flex">
+
+        <div class="cards">
             <img src="socks.jpg" alt="Immagine 1">
             <div class="overlay">
-                <h3 class="titolo-cards"> 
+                <h3 class="titolo-cards">
                     Visita la <br>
                     sezione <i>calze</i> </h3>
             </div>
         </div>
         <div class="cards">
             <img src="costumi.jpg" alt="Immagine 2">
-            <div class="overlay"> 
-                <h3 class="titolo-cards"> 
+            <div class="overlay">
+                <h3 class="titolo-cards">
                     Visita la <br>
                     sezione <i>costumi da bagno</i> </h3>
             </div>
@@ -89,109 +91,115 @@
 
     </section>
 
-<!-- SEZIONE BEST PRODOTTI-->
-   <div class="container">
-    <h2> Il meglio dei saldi solo per te</h2>
-    <p> Dai un'occhiata ai nostri must-have per questa stagione</p>
-   </div>
-
-   <section class="header flex" style="gap: 20px; margin-top: 50px;">
-
-    <div class="product-card">
-        <img src="pants-due.jpeg" alt="Nome Prodotto">
-        <div class="product-info">
-            <h4>Calze Termiche</h4>
-            <p>Calze morbide e calde, perfette per l'inverno.</p>
-            <span class="price">€9.99</span>
-            <button class="add-to-cart">Aggiungi al carrello</button>
-        </div>
+    <!-- SEZIONE BEST PRODOTTI-->
+    <div id="offerte" class="container">
+        <h2> Il meglio dei saldi solo per te</h2>
+        <p> Dai un'occhiata ai nostri must-have per questa stagione</p>
     </div>
 
+    <section class="header flex" style="gap: 20px; margin-top: 50px; margin-bottom: 50px;">
+
         <div class="product-card">
-            <img src="pants-due.jpeg" alt="Nome Prodotto">
+            <img src="top-pizzo.jpg" alt="Nome Prodotto">
             <div class="product-info">
-                <h4>Calze Termiche</h4>
-                <p>Calze morbide e calde, perfette per l'inverno.</p>
-                <span class="price">€9.99</span>
+                <h4>Top in top pizzo floreale</h4>
+                <p>Top in pizzo a rete con motivo floreale ad effetto macramè</p>
+                <span class="price">€25.95</span>
                 <button class="add-to-cart">Aggiungi al carrello</button>
             </div>
         </div>
 
-            <div class="product-card">
-                <img src="pants-due.jpeg" alt="Nome Prodotto">
-                <div class="product-info">
-                    <h4>Calze Termiche</h4>
-                    <p>Calze morbide e calde, perfette per l'inverno.</p>
-                    <span class="price">€9.99</span>
-                    <button class="add-to-cart">Aggiungi al carrello</button>
+        <div class="product-card">
+            <img src="hot-pants.jpg" alt="Nome Prodotto">
+            <div class="product-info">
+                <h4>Hot Pants</h4>
+                <p>Culotte da donna realizzata in morbido tessuto elasticizzato</p>
+                <span class="price">€15.95</span>
+                <button class="add-to-cart">Aggiungi al carrello</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="collant-rete.jpg" alt="Nome Prodotto">
+            <div class="product-info">
+                <h4>Collant a Rete Effetto Macramè</h4>
+                <p>Calze a rete da donna impreziosite da un elegante motivo floreale coprente</p>
+                <span class="price">€12.95</span>
+                <button class="add-to-cart">Aggiungi al carrello</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE BENEFICI -->
+
+    <section  id="benefit" style="background-color: black; color: white; padding-bottom: 100px;">
+
+        <div class="container">
+            <h2>Perché Sceglierci?</h2>
+
+            <div class="benefit flex-benefit">
+                <div class="icons uno"> </div>
+                <div>
+                    <h4>Spedizione Gratuita</h4>
+                    <p>Per ordini superiori a €50, la spedizione è gratuita in tutta Italia.</p>
                 </div>
             </div>
-</section>
 
-<!-- SEZIONE BENEFICI -->
+            <div class="benefit flex-benefit">
+                <div class="icons due"> </div>
+                <div>
+                    <h4>Reso Gratuito</h4>
+                    <p>Hai 30 giorni per restituire il tuo acquisto senza costi aggiuntivi.</p>
+                </div>
+            </div>
 
-<section style="background-color: black; color: white; padding-bottom: 100px;">
+            <div class="benefit flex-benefit">
+                <div class="icons tre"> </div>
+                <div>
+                    <h4>Programma Fedeltà</h4>
+                    <p>Accumula punti e ottieni sconti esclusivi sui tuoi acquisti.</p>
+                </div>
+            </div>
 
-<div class="container">
-    <h2>Perché Sceglierci?</h2>
-
-        <div class="benefit flex-benefit">
-            <div class="icons uno" > </div>
-            <div>
-            <h4>Spedizione Gratuita</h4>
-            <p>Per ordini superiori a €50, la spedizione è gratuita in tutta Italia.</p>
+            <div class="benefit flex-benefit">
+                <div class="icons quattro"> </div>
+                <div>
+                    <h4>Pagamenti Sicuri</h4>
+                    <p>Usiamo le tecnologie più avanzate per proteggere i tuoi dati.</p>
+                </div>
+            </div>
         </div>
         </div>
+    </section>
 
-        <div class="benefit flex-benefit">
-            <div class="icons due" > </div>
-            <div>
-            <h4>Reso Gratuito</h4>
-            <p>Hai 30 giorni per restituire il tuo acquisto senza costi aggiuntivi.</p>
-        </div>
-        </div>
+    <!-- SEZIONE NEWSLETTER -->
 
-        <div class="benefit flex-benefit">
-            <div class="icons tre"> </div>
-            <div>
-            <h4>Programma Fedeltà</h4>
-            <p>Accumula punti e ottieni sconti esclusivi sui tuoi acquisti.</p>
-        </div>
+    <section id="newsletter" class="header newsletter">
+        <div class="img-news">
+            <img src="banner-news.jpg" class="card-img-top" alt="...">
         </div>
 
-        <div class="benefit flex-benefit">
-            <div class="icons quattro"> </div>
-            <div>
-            <h4>Pagamenti Sicuri</h4>
-            <p>Usiamo le tecnologie più avanzate per proteggere i tuoi dati.</p>
+        <div class="form">
+            <h3 class="">Iscriviti alla nostra Newsletter</h3>
+            <p class="">Ricevi offerte esclusive, anteprime sulle nuove collezioni e molto altro!</p>
+
+            <form>
+                <input type="email" placeholder="Iscriviti alla nostra newsletter">
+                <a href="#" type="submit" class="add-to-cart"> Iscriviti </a>
+            </form>
+
         </div>
-        </div>
-    </div>
-    </div>
-</section>
+    </section>
 
-<!-- SEZIONE NEWSLETTER -->
+ <!-- BACK TO TOP-->
 
-<section class="header newsletter">
-    <div class="img-news"> 
-        <img src="banner-news.jpg" class="card-img-top" alt="...">
-    </div>
+    <a href="#hero" class="back-to-top">↑</a>
 
-    <div class="form"> 
-        <h3 class="">Iscriviti alla nostra Newsletter</h3>
-        <p class="">Ricevi offerte esclusive, anteprime sulle nuove collezioni e molto altro!</p>
-
-        <form>
-          <input type="email" placeholder="Iscriviti alla nostra newsletter"  class="input">
-          <a href="#" type="submit" class="add-to-cart"> Iscriviti </a>
-        </form>
-    </div>
-</section>
-    
     <!-- FOOTER -->
-<footer>
-    <p>&copy; 2025 Calzedonia - Tutti i diritti riservati</p>
-</footer>
+    <footer>
+        <p>&copy; 2025 Calzedonia - Tutti i diritti riservati</p>
+    </footer>
 
 </body>
+
 </html>
